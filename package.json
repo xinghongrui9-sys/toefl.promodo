@@ -1,0 +1,13 @@
+{
+  "name": "english-pomodoro",
+  "version": "1.0.0",
+  "private": true,
+  "description": "英语番茄钟 — React + Node.js + SQLite 全栈应用",
+  "scripts": {
+    "dev": "node -e \"const{spawn}=require('child_process');const s=spawn('node',['server.js'],{cwd:'server',stdio:'inherit'});const c=spawn('npx',['vite','--host'],{cwd:'client',stdio:'inherit'});process.on('SIGINT',()=>{s.kill();c.kill();process.exit()});\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev"
+  },
+  "keywords": ["pomodoro", "english-learning", "react", "sqlite"],
+  "license": "MIT"
+}
